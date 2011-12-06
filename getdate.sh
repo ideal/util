@@ -27,7 +27,7 @@ while [ $day -le $days ]; do
     if [[ $weekday -ne 6 && $weekday -ne 7 ]]; then
         echo -n $(date --date=$prevyear$prevmonth$day +"%d")"，";
     fi
-    day=$(expr $day + 1)
+    let day+=1
 done
 
 day="01"
