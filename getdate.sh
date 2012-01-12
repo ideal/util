@@ -14,6 +14,7 @@ prevmonth=$(expr $currmonth - 1)
 prevyear=$curryear
 if [ $prevmonth == 0 ]; then
     prevyear=$(expr $prevyear - 1);
+    prevmonth=12
 fi
 
 monthdays=(-1 31 28 31 30 31 30 31 31 30 31 30 31)
