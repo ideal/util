@@ -1,0 +1,4 @@
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+set editing-mode emacs
+ "\e[3~":delete-char
