@@ -1524,7 +1524,7 @@ ngx_http_update_location_config(ngx_http_request_t *r)
             r->keepalive = 0;
         } else if (clcf->keepalive_autoclose && r->headers_in.referer) {
             /*
-             * if keepalive_autoclose is enabled, and the request if for 
+             * if keepalive_autoclose is enabled, and the request is for 
              * specific file type and has referer, then it will auto
              * disable keep-alive.
              */
